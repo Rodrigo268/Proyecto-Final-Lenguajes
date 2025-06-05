@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package IGU;
 
 import javax.swing.JOptionPane;
@@ -116,7 +112,7 @@ public class login extends javax.swing.JFrame {
     private void btnIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarActionPerformed
          String nombre = txtNombre.getText().trim();
         String password = txtPassword.getText().trim();
-        if(admin.equals(nombre) && password.equals(password)){
+        if(admin.equals(nombre) && adminPassword.equals(password)){
             Menu menu = new Menu();
             menu.setVisible(true);
             menu.setLocationRelativeTo(null);
